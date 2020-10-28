@@ -128,7 +128,7 @@ public class Main {
         String contenido;
         for(String i : lista){
             tokens = i.split(";");
-            contenido = "ID:"+tokens[0]+"\nN. Descargas: "+tokens[1]+"\nDescripcion: "+tokens[3]+"\nTamanio Archivo: "+tokens[4];
+            contenido = tokens[0]+";"+tokens[1]+";"+tokens[3]+";"+tokens[4];
             crearFicheroTxt("aplicaciones/"+tokens[2]+".txt",contenido);
         }
     }
